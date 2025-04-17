@@ -1,0 +1,96 @@
+.login {
+    font-family: "Tahoma";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.line {
+    color: #3D3D3D;
+    font-family: "Tahoma";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 16px
+}
+
+.regist {
+    color: #3D3D3D;
+    font-family: "Tahoma";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    padding: 14px 12px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    color: #A5A5A5;
+    font-family: "Tahoma";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.txt {
+    color: #3D3D3D;
+    font-family: "Tahoma";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.body {
+    box-sizing: border-box;
+    margin: 0px;
+    width: 500px;
+    height: 656px;
+    flex-shrink: 0;
+    width: 500px;
+    height: 656px;
+    flex-shrink: 0;
+    border-bottom: 10px solid #46A358;
+}
+
+.button {
+    box-sizing: border-box;
+    width: 300px;
+    height: 45px;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Tahoma";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    border: none;
+}
+
+.link {
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #727272;
+    background: #FFF;
+    text-align: center;
+    font-family: "Tahoma";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+}
