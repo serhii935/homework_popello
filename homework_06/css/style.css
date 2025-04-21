@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Tahoma, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    box-sizing: content-box;
+    background-color: #fff;
+    padding-top: 30px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 0.3px solid;
+    border-bottom-color: rgba(70, 163, 88, 0.50);
+}
+
+.logo {
+    margin-right: 229px;
+}
+
+.menu a {
+    color: #3d3d3d;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-right: 48px;
+    padding-bottom: 32px;
+    border-bottom: 3px solid transparent;
+}
+
+.menu a:hover {
+    color: #3d3d3d;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom-color: #46a358;
+}
+
+.login {
+    margin-left: 320px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 6px;
+    background: #46A358;
+    text-decoration: 0;
+    flex-shrink: 0;
+    padding: 8px 17px 7px 41px;
+    background-image: url(../img/Login.svg);
+    background-repeat: no-repeat;
+    background-position: 20px 8px;
+}
+
+.main {
+    padding-top: 68px;
+    padding-bottom: 85px;
+    padding-left: 40px;
+    color: #3d3d3d;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.section-color{
+    background-color: rgba(245, 245, 245, 0.50);
+}
+
+.welcome {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.h1 {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: 570px;
+    margin-bottom: 5px;
+}
+
+.green {
+    color: #46a358;
+}
+
+.last-p {
+    color: #727272;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 44px;
+    width: 535px;
+}
+
+.shop-btn {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: 0;
+    border-radius: 6px;
+    background-color: #46a358;
+    padding: 11px 27px 9px 26px;
+}
+
+.img{
+    display: inline-block;
+    width: 507px;
+    height: 450px;
+    background-image: url(../img/01_2.png);
+    background-repeat: no-repeat;
+    background-position: 60px 295px;
+}
