@@ -7,6 +7,7 @@
     font-family: Tahoma, sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #3d3d3d;
 }
 
 .wrapper {
@@ -26,31 +27,31 @@
     border-bottom-color: rgba(70, 163, 88, 0.50);
 }
 
+.main {
+    float: left;
+}
+
 .logo {
-    margin-right: 229px;
+    margin-right: 244px;
 }
 
 .menu a {
-    color: #3d3d3d;
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    color: inherit;
     margin-right: 48px;
     padding-bottom: 32px;
     border-bottom: 3px solid transparent;
 }
 
 .menu a:hover {
-    color: #3d3d3d;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: normal;
     border-bottom-color: #46a358;
 }
 
 .login {
-    margin-left: 320px;
+    margin-left: 316px;
     color: #ffff;
     font-size: 16px;
     font-weight: 500;
@@ -60,22 +61,23 @@
     text-decoration: 0;
     flex-shrink: 0;
     padding: 8px 17px 7px 41px;
-    background-image: url(../img/Login.svg);
+    background-image: url(../img/login.svg);
     background-repeat: no-repeat;
     background-position: 20px 8px;
 }
 
-.main {
+.green-shop {
     padding-top: 68px;
     padding-bottom: 85px;
     padding-left: 40px;
-    color: #3d3d3d;
     display: inline-block;
     vertical-align: top;
-    
+
 }
-.section-color{
+
+.section-color {
     background-color: rgba(245, 245, 245, 0.50);
+    margin-bottom: 46px;
 }
 
 .welcome {
@@ -120,11 +122,209 @@
     padding: 11px 27px 9px 26px;
 }
 
-.img{
+.img {
     display: inline-block;
     width: 507px;
-    height: 450px;
-    background-image: url(../img/01_2.png);
-    background-repeat: no-repeat;
-    background-position: 60px 295px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.left-bar {
+    float: left;
+    width: 285px;
+}
+
+.list {
+    height: 647px;
+    background-color: #fbfbfb;
+    padding-top: 14px;
+    padding-left: 18px;
+}
+
+.list-item {
+    margin-left: 0px;
+    padding-left: 12px;
+    font-size: 15px;
+    line-height: 40px;
+    list-style-type: none;
+}
+
+.list-item a {
+    text-decoration: 0;
+    color: inherit;
+}
+
+.list-item a:hover {
+    color: #46a358;
+}
+
+.sale-baner {
+    width: 100%;
+    /* display: block; */
+    /* padding: 0;  */
+}
+
+.right-bar {
+    width: 915px;
+    float: left;
+    margin-bottom: 31px;
+}
+
+.up-select {
+    float: left;
+}
+
+.up-panel-txt {
+    float: left;
+}
+
+.up-sort {
+    float: right;
+}
+
+.up-btn {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+    font-family: "Tahoma";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 0px;
+}
+
+.up-btn-mrgn {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+    font-family: "Tahoma";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 0px;
+    margin-left: 40px;
+}
+
+.up-select {
+    margin-left: 20px;
+}
+
+
+.up-select button {
+    padding-bottom: 7px;
+    border-bottom: 2px solid transparent;
+}
+
+.up-select button:hover {
+    color: #46a358;
+    border-bottom-color: #46a358;
+}
+
+.up-sort button {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+    appearance: 0;
+    font-family: "Tahoma";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.up-sort button:hover {
+    color: #46a358;
+}
+
+.up-sort button:hover path {
+    stroke: #46a358;
+}
+
+.goods {
+    float: left;
+    width: 915px;
+    margin-bottom: 90px;
+}
+
+.goods-element {
+    width: 285px;
+    margin-left: 20px;
+    margin-bottom: 70px;
+    float: left;
+}
+
+.green-line {
+    border-top: 1px solid transparent;
+}
+
+.goods-element div:hover {
+    color: #46a358;
+    border-top-color: #46a358;
+}
+
+.goods-element-ref {
+    text-decoration: 0;
+}
+
+.good-name {
+    color: #3d3d3d;
+    font-family: "Tahoma";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.good-price {
+    color: #46a358;
+    font-family: "Tahoma";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    padding-top: 6px;
+}
+
+.paginator {
+    float: right;
+}
+
+.paginator a {
+    display: inline-block;
+    text-align: center;
+    padding-top: 9px;
+    width: 35px;
+    height: 35px;
+    color: #3d3d3d;
+    font-family: "Tahoma";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+    margin-left: 10px;
+}
+
+.paginator a:hover {
+    color: #fff;
+    font-family: "Tahoma";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    background-color: #46a358;
+    border-color: #46a358;
+}
+
+.paginator a:hover path {
+    stroke: #fff;
+    stroke-width: 3px;
 }
