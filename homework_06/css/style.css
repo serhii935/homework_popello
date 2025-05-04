@@ -1,10 +1,58 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-BoldItalic.woff') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Medium.woff') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-MediumItalic.woff') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Bold.woff') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts/CeraPro-Italic.woff') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../fonts//CeraPro-Regular.woff') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
 .body {
-    font-family: Tahoma, sans-serif;
+    font-family: 'Cera Pro', "Tahoma", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #3d3d3d;
@@ -12,7 +60,7 @@
 
 .wrapper {
     max-width: 1220px;
-    min-width: 1020px;
+    min-width: 991px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -20,17 +68,14 @@
 .header {
     box-sizing: content-box;
     background-color: #fff;
-    padding-top: 30px;
+    padding-top: 25px;
     margin-bottom: 12px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     border-bottom: 0.3px solid;
     border-bottom-color: rgba(70, 163, 88, 0.50);
-}
-
-.logo {
-    margin-right: auto;
 }
 
 .menu a {
@@ -48,8 +93,50 @@
     border-bottom-color: #46a358;
 }
 
+.login-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.search svg:hover path {
+    fill: #46a358;
+}
+
+.basket {
+    margin-left: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.basket svg:hover path {
+    fill: #46a358;
+}
+
+.basket-count {
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #46a358;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .login {
-    margin-left: auto;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -61,6 +148,7 @@
     background-image: url(../img/login.svg);
     background-repeat: no-repeat;
     background-position: 20px 8px;
+    margin-left: 30px;
 }
 
 .main {
@@ -138,7 +226,7 @@
 .left-bar {
     display: flex;
     flex-direction: column;
-    width: 23.75%;
+    width: 25%;
 }
 
 .list {
@@ -149,7 +237,6 @@
 }
 
 .list-item {
-    margin-left: 0;
     padding-left: 12px;
     font-size: 15px;
     line-height: 40px;
@@ -170,7 +257,7 @@
 }
 
 .right-bar {
-    width: 76.25%;
+    width: 75%;
     display: flex;
     flex-direction: column;
 }
@@ -201,7 +288,7 @@
     cursor: pointer;
     border: 0;
     background-color: #fff;
-    font-family: "Tahoma";
+    font-family: inherit;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -224,7 +311,7 @@
     border: 0;
     background-color: #fff;
     appearance: none;
-    font-family: "Tahoma";
+    font-family: inherit;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -243,56 +330,125 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
+    background-color: #ffffff;
 }
 
 .goods-element {
     width: 33.333%;
-    padding-left:10px ;
+    padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 90px;
+    padding-bottom: 70px;
 }
 
 .green-line {
     border-top: 1px solid transparent;
+    position: relative;
+}
+
+.goods-element div:hover {
+    border-top-color: #46a358;
 }
 
 .goods-img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(245, 245, 245, 0.50);
+    position: relative;
 }
 
-.img-responsive{
+.goods-img-panel {
+    width: 100%;
+    position: absolute;
+    bottom: 7px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.goods-element div:hover .goods-img-panel {
+    display: flex;
+}
+
+.goods-img-panel-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.goods-img-panel-btn a:hover path {
+    fill: #46a358;
+}
+
+.goods-img-panel-btn-element {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    padding: 6px 5px;
+    background-color: #ffffff;
+    text-decoration: 0;
+    border-radius: 3px;
+}
+
+.goods-sale {
+    position: absolute;
+    top: 14px;
+    padding: 7px 8px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    background-color: #46a358;
+}
+
+.img-responsive {
     max-width: 100%;
     height: auto;
 }
 
-.goods-element div:hover {
-    color: #46a358;
-    border-top-color: #46a358;
-}
-
 .goods-element-ref {
     text-decoration: none;
+    display: inline-block;
+    padding-top: 12px;
 }
 
 .good-name {
     color: #3d3d3d;
-    font-family: "Tahoma";
+    font-family: inherit;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
 }
 
+.good-price-positioning {
+    display: flex;
+    align-items: center;
+}
+
 .good-price {
     color: #46a358;
-    font-family: "Tahoma";
+    font-family: inherit;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 16px;
     padding-top: 6px;
+}
+
+.good-price-sale {
+    color: #a5a5a5;
+    font-family: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    align-self: end;
+    padding-left: 16px;
+    text-decoration: line-through;
 }
 
 .paginator {
@@ -308,7 +464,7 @@
     width: 35px;
     height: 35px;
     color: #3d3d3d;
-    font-family: "Tahoma";
+    font-family: inherit;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -320,7 +476,7 @@
 
 .paginator a:hover {
     color: #fff;
-    font-family: "Tahoma";
+    font-family: inherit;
     font-size: 18px;
     font-weight: 700;
     line-height: 16px;
