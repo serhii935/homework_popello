@@ -11,14 +11,32 @@
 <body class="body">
     <div class="wrapper">
         <header class="header">
-            <a href="#">
+            <a class="logo" href="#">
                 <img class="img-responsive" src="./img/logo.svg" alt="">
             </a>
-            <nav class="menu">
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">Plant Care</a>
-                <a href="#">Blogs</a>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Plant Care</a>
+                        <ul class="menu-1">
+                            <li><a href="#">Drainage</a></li>
+                            <li><a href="#">Fungicides</a></li>
+                            <li><a href="#">Fertilizer</a></li>
+                            <li><a class="priming-pointer" href="#">Priming</a>
+                                <ul class="menu-2">
+                                    <li><a href="#">Universal</a></li>
+                                    <li><a href="#">For Ficus</a></li>
+                                    <li><a href="#">For Cacti</a></li>
+                                    <li><a href="#">For Citrus</a></li>
+                                    <li><a href="#">For those in bloom</a></li>
+                                    <li><a href="#">For Orchids</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
             </nav>
             <div class="login-bar">
                 <button type="button" class="search">
@@ -55,16 +73,17 @@
             <section class="section-items">
                 <div class="left-bar">
                     <div class="list">
-                        <p><b>Categories</b></p>
+                        <p class="categories">Categories</p>
                         <ul class="list-item">
-                            <li><a href="#">House Plants</a></li>
-                            <li><a href="#">Potter Plants</a></li>
-                            <li><a href="#">Seeds</a></li>
-                            <li><a href="#">Small Plants</a></li>
-                            <li><a href="#">Big Plants</a></li>
-                            <li><a href="#">Succulents</a></li>
-                            <li><a href="#">Trerrsriums</a></li>
-                            <li><a href="#">Gardening</a></li>
+                            <li><a href="#">House Plants <span>(33)</span></a></li>
+                            <li><a href="#">Potter Plants <span>(12)</span></a></li>
+                            <li><a href="#">Seeds <span>(65)</span></a></li>
+                            <li><a href="#">Small Plants <span>(39)</span></a></li>
+                            <li><a href="#">Big Plants <span>(23)</span></a></li>
+                            <li><a href="#">Succulents <span>(17)</span></a></li>
+                            <li><a href="#">Trerrsriums <span>(19)</span></a></li>
+                            <li><a href="#">Gardening <span>(13)</span></a></li>
+                            <li><a href="#">Accsessories <span>(18)</span></a></li>
                         </ul>
                     </div>
                     <img class="sale-baner" src="./img/super_sale_banner.png" alt="">
@@ -78,7 +97,7 @@
                         </div>
                         <div class="up-sort">
                             <p>Sort by:</p>
-                            <button type="button">Default sorting
+                            <button type="button"> <span class="defsort">Default sorting</span> 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
                                     fill="none">
                                     <path d="M10.6667 1.66669L6.00004 6.33335L1.33337 1.66669" stroke="#3d3d3d"
@@ -309,7 +328,8 @@
                         <article class="goods-element">
                             <div class="green-line">
                                 <div class="goods-img">
-                                    <img class="img-responsive" src="./img/blushing.png" alt=""> <div class="goods-img-panel">
+                                    <img class="img-responsive" src="./img/blushing.png" alt="">
+                                    <div class="goods-img-panel">
                                         <div class="goods-img-panel-btn">
                                             <a class="goods-img-panel-btn-element" href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -414,7 +434,8 @@
                         <article class="goods-element">
                             <div class="green-line">
                                 <div class="goods-img">
-                                    <img class="img-responsive" src="./img/bird.png" alt=""> <div class="goods-img-panel">
+                                    <img class="img-responsive" src="./img/bird.png" alt="">
+                                    <div class="goods-img-panel">
                                         <div class="goods-img-panel-btn">
                                             <a class="goods-img-panel-btn-element" href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
