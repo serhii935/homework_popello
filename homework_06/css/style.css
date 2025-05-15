@@ -132,8 +132,8 @@
     background-image: url(../img/priming-pointer.svg);
     background-repeat: no-repeat;
     background-position: center right 17px;
-    transition-duration: 0.2s;
-    transition-property: color;
+    transition-duration: 0.7s;
+    transition-property: background-image;
 }
 
 .menu-1 li:hover>.priming-pointer {
@@ -174,13 +174,13 @@
     background-color: #edf6ee;
     padding: 7px 14px;
     transition-duration: 0.2s;
-    transition-property: color;
+    transition-property: background-color;
 }
 
 .menu-1 li:hover>a {
     font-weight: 700;
     color: #ffffff;
-    background-color: #1A712A;
+    background-color: #1a712a;
 }
 
 .main-menu:hover>.menu-1 {
@@ -200,7 +200,7 @@
     padding-bottom: 21px;
     border-bottom: 3px solid transparent;
     transition-duration: 0.2s;
-    transition-property: color;
+    transition-property: color border-bottom-color;
 }
 
 .main-menu:hover>a,
@@ -267,11 +267,11 @@
     background-position: 18px 8px;
     margin-left: 30px;
     transition-duration: 0.2s;
-    transition-property: color;
+    transition-property: opacity;
 }
 
 .login:hover {
-    background: #46a358b3;
+    opacity: 0.7;
     background-image: url(../img/login.svg);
     background-repeat: no-repeat;
     background-position: 18px 8px;
@@ -338,7 +338,7 @@
     background-color: #46a358;
     padding: 14px 26px 10px 24px;
     transition-duration: 0.2s;
-    transition-property: color;
+    transition-property: background-color;
 }
 
 .shop-btn:hover {
@@ -353,12 +353,15 @@
 
 .section-items {
     display: flex;
+    margin: 0 -10px;
 }
 
 .left-bar {
     display: flex;
     flex-direction: column;
     width: 25%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .list {
@@ -409,6 +412,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .up-panel {
@@ -456,7 +460,7 @@
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
     transition-duration: 0.2s;
-    transition-property: color;
+    transition-property: color border-bottom-color; 
 }
 
 .up-select button:hover {
@@ -504,7 +508,7 @@
     border-top: 1px solid transparent;
     position: relative;
     transition-duration: 0.2s;
-    transition-property: color;
+    transition-property: border-top-color;
 }
 
 .goods-element div:hover {
@@ -537,8 +541,6 @@
     justify-content: space-between;
     align-items: center;
     width: 40%;
-    transition-duration: 0.2s;
-    transition-property: color;
 }
 
 .goods-img-panel-btn a:hover path {
@@ -584,7 +586,7 @@
     color: #3d3d3d;
     line-height: 16px;
     transition-duration: 0.2s;
-    transition-property: color opacity;
+    transition-property: opacity;
 }
 
 .goods-element-ref:hover .good-name {
@@ -605,7 +607,7 @@
     line-height: 16px;
     padding-top: 13px;
     transition-duration: 0.2s;
-    transition-property: color opacity;
+    transition-property: opacity;
 }
 
 .goods-element-ref:hover .good-price {
@@ -749,7 +751,6 @@
 }
 
 .find-more-btn:hover {
-    background-color: #46a358;
     opacity: 0.7;
 }
 
@@ -833,11 +834,10 @@
     background-repeat: no-repeat;
     background-position: 75px 1px;
     transition-duration: 0.2s;
-    transition-property: color opacity;
+    transition-property: opacity;
 }
 
 .posts-content-btn:hover {
-    color: #3d3d3d;
     opacity: 0.7;
     background-image: url(../img/arrow-right-black-pointer.svg);
 }
@@ -933,7 +933,6 @@
 }
 
 .plant-care-newsletter-btn:hover {
-    background-color: #46a358;
     opacity: 0.7;
 }
 
@@ -945,7 +944,7 @@
 }
 
 .contact-info-background {
-    background-image: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+   background-color: rgba(70, 163, 88, 0.10);
 }
 
 .contact-info {
@@ -965,12 +964,11 @@
     padding-left: 24px;
     background: url(../img/location.svg) no-repeat 1px 2px;
     transition-duration: 0.2s;
-    transition-property: color opacity;
+    transition-property: opacity;
 
 }
 
 .contact-info-map:hover {
-    color: #3d3d3d;
     opacity: 0.7;
     background: url(../img/location-hover.svg) no-repeat 1px 2px;
 }
@@ -984,11 +982,10 @@
     padding-left: 24px;
     background: url(../img/message.svg) no-repeat 0px 2px;
     transition-duration: 0.2s;
-    transition-property: color opacity;
+    transition-property: opacity;
 }
 
 .contact-info-mail:hover {
-    color: #3d3d3d;
     opacity: 0.7;
     background: url(../img/message-hover.svg) no-repeat 0px 2px;
 }
@@ -1002,11 +999,10 @@
     padding-left: 24px;
     background: url(../img/calling.svg) no-repeat 0px 1px;
     transition-duration: 0.2s;
-    transition-property: color opacity;
+    transition-property: opacity;
 }
 
 .contact-info-tel:hover {
-    color: #3d3d3d;
     opacity: 0.7;
     background: url(../img/calling-hover.svg) no-repeat 0px 1px;
 }
@@ -1014,8 +1010,7 @@
 .account-help {
     display: flex;
     width: 100%;
-    padding-top: 33px;
-    padding-bottom: 24px;
+    padding-top: 26px;
     border-top: 1px solid #46a35833;
     background-color: #fbfbfb;
     border-bottom: 1px solid #46a35833;
@@ -1093,7 +1088,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 16px;
-    padding-top: 196px;
+    padding-top: 217px;
     padding-bottom: 7px;
 }
 
@@ -1103,11 +1098,10 @@
     justify-content: space-between;
     position: relative;
     padding-right: 32px;
-    padding-bottom: 15px;
-    padding-left: 41px;
+    padding-left: 47px;
     color: #3d3d3d;
     font-size: 15px;
-    line-height: 40px;
+    line-height: 39px;
     transition-duration: 0.2s;
     transition-property: color;
 }
@@ -1118,16 +1112,23 @@
 
 .checkbox-text::before {
     content: "";
-    width: 24px;
-    height: 24px;
+    width: 21px;
+    height: 21px;
     background-color: #ffffff;
     border: 2px solid #3d3d3d;
     border-radius: 4px;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 7px;
+    left: 11px;
 }
 
 .checkbox-input:checked+.checkbox-text::before {
     background: url(../img/check-mark.svg) no-repeat center;
+}
+
+.all-rights{
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 7px;
 }
