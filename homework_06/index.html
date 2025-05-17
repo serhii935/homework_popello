@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 1500,
+                values: [39, 1230],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
+    </script>
     <title>Serhii Popello</title>
 </head>
 
@@ -86,6 +104,12 @@
                             <li><a href="#">Gardening <span>(13)</span></a></li>
                             <li><a href="#">Accsessories <span>(18)</span></a></li>
                         </ul>
+                        <div class="slider-range">
+                            <p class="price-range">Price Range</p>
+                            <div id="slider-range"></div>
+                            <label for="amount">Price:<input type="text" id="amount" readonly=""></label>
+                        </div>
+                        <button class="slider-range-btn" type="button">Filter</button>
                         <p class="size">Size</p>
                         <p>
                             <label class="checkbox-label">

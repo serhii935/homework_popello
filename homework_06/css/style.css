@@ -5,7 +5,7 @@
     font-style: italic;
     font-display: swap;
 }
-
+   
 @font-face {
     font-family: 'Cera Pro';
     src: url('../fonts/CeraPro-BlackItalic.woff') format('woff');
@@ -389,7 +389,7 @@
 .list-item a {
     display: flex;
     justify-content: space-between;
-    padding-right: 35px;
+    padding-right: 20px;
 }
 
 .sale-baner {
@@ -460,7 +460,7 @@
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
     transition-duration: 0.2s;
-    transition-property: color border-bottom-color; 
+    transition-property: color border-bottom-color;
 }
 
 .up-select button:hover {
@@ -944,7 +944,7 @@
 }
 
 .contact-info-background {
-   background-color: rgba(70, 163, 88, 0.10);
+    background-color: rgba(70, 163, 88, 0.10);
 }
 
 .contact-info {
@@ -1088,7 +1088,7 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 16px;
-    padding-top: 217px;
+    padding-top: 46px;
     padding-bottom: 7px;
 }
 
@@ -1097,7 +1097,7 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding-right: 32px;
+    padding-right: 18px;
     padding-left: 47px;
     color: #3d3d3d;
     font-size: 15px;
@@ -1126,9 +1126,98 @@
     background: url(../img/check-mark.svg) no-repeat center;
 }
 
-.all-rights{
+.all-rights {
     font-size: 14px;
     line-height: 30px;
     text-align: center;
     padding-top: 7px;
+}
+
+.price-range {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 11px;
+    padding-bottom: 16px;
+}
+
+.slider-range {
+    margin: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+#slider-range {
+    position: relative;
+    height: 4px;
+    width: 196px;
+    background: rgba(70, 163, 88, 0.20);
+    border-radius: 5px;
+    border: none;
+}
+
+#slider-range .ui-slider-handle {
+    position: absolute;
+    top: -8px;
+    width: 21px;
+    height: 21px;
+    border: 3px solid white;
+    background-color: #46a358;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition-duration: 0.2s;
+    transition-property: background-color;
+}
+
+#slider-range .ui-slider-handle:hover {
+    background-color: #46a358b3;
+}
+
+#slider-range .ui-slider-range {
+    position: absolute;
+    height: 100%;
+    background: #46a358;
+    border-radius: 5px;
+}
+
+label[for="amount"] {
+    padding-top: 11px;
+    padding-left: 12px;
+    font-size: 15px;
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+#amount {
+    width: 110px;
+    color: #46a358;
+    font-family: 'Cera Pro', "Tahoma", sans-serif;
+    font-weight: 700;
+    line-height: 16px;
+    font-size: 15px;
+    background: #fbfbfb;
+    text-align: start;
+    border: none;
+}
+
+.slider-range-btn {
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 8px 21px;
+    margin: 14px 13px 0;
+    border-radius: 6px;
+    background-color: #46A358;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+}
+
+.slider-range-btn:hover{
+    opacity: 0.7;
 }
