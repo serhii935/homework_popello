@@ -5,7 +5,7 @@
     font-style: italic;
     font-display: swap;
 }
-   
+
 @font-face {
     font-family: 'Cera Pro';
     src: url('../fonts/CeraPro-BlackItalic.woff') format('woff');
@@ -76,7 +76,7 @@
 
 .wrapper {
     max-width: 1220px;
-    min-width: 991px;
+    min-width: 767px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -91,6 +91,7 @@
     padding-bottom: 12px;
     border-bottom: 0.3px solid;
     border-bottom-color: rgba(70, 163, 88, 0.50);
+    position: relative;
 }
 
 .logo {
@@ -200,7 +201,7 @@
     padding-bottom: 21px;
     border-bottom: 3px solid transparent;
     transition-duration: 0.2s;
-    transition-property: color border-bottom-color;
+    transition-property: color, border-bottom-color;
 }
 
 .main-menu:hover>a,
@@ -323,7 +324,7 @@
     color: #727272;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 52px;
+    padding-bottom: 52px;
     width: 535px;
 }
 
@@ -365,7 +366,6 @@
 }
 
 .list {
-    height: 774px;
     background-color: #fbfbfb;
     padding-top: 16px;
     padding-left: 16px;
@@ -460,7 +460,7 @@
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
     transition-duration: 0.2s;
-    transition-property: color border-bottom-color;
+    transition-property: color, border-bottom-color;
 }
 
 .up-select button:hover {
@@ -688,7 +688,6 @@
 }
 
 .info-element {
-    height: 302px;
     width: 50%;
     padding-left: 10px;
     padding-right: 10px;
@@ -765,7 +764,6 @@
     line-height: 16px;
     text-align: center;
     padding-bottom: 15px;
-    padding-left: 16px;
 }
 
 .blog-posts-p {
@@ -777,11 +775,11 @@
 
 .blog-posts-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -10px;
 }
 
 .blog-posts-item {
-    height: 362px;
     width: 25%;
     padding-left: 10px;
     padding-right: 10px;
@@ -1218,6 +1216,522 @@ label[for="amount"] {
     transition-property: opacity;
 }
 
-.slider-range-btn:hover{
+.slider-range-btn:hover {
     opacity: 0.7;
+}
+
+@media (max-width: 991px) {
+
+    .menu>li {
+        padding-right: 30px;
+    }
+
+    .section-better-planet {
+        margin-bottom: 36px;
+    }
+
+    .h1 {
+        font-size: 50px;
+        line-height: 50px;
+        width: 470px;
+    }
+
+    .green-shop {
+        padding-top: 50px;
+        padding-bottom: 75px;
+        padding-left: 33px;
+    }
+
+    .last-p {
+        padding-bottom: 30px;
+        width: 435px;
+    }
+
+    .left-bar {
+        width: 40%;
+    }
+
+    .up-select {
+        width: 50%;
+    }
+
+    .up-sort {
+        width: 50%;
+    }
+
+    .goods-element {
+        padding-bottom: 20px;
+        width: 50%;
+    }
+
+    .paginator {
+        padding-bottom: 70px;
+    }
+
+    .find-more-p {
+        width: 292px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .info {
+        flex-direction: column;
+        padding-bottom: 66px;
+    }
+
+    .find-more-h {
+        width: 300px;
+        font-size: 36px;
+        line-height: 48px;
+        padding-bottom: 15px;
+    }
+
+    .blog-posts-item {
+        width: 50%;
+    }
+
+    .blog-posts-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .posts-content-txt {
+        text-align: center;
+    }
+
+    .posts-content-p-green {
+        text-align: center;
+    }
+
+    .posts-content-h {
+        text-align: center;
+    }
+
+    .posts-content-p {
+        text-align: center;
+    }
+
+    .plant-care {
+        flex-direction: column;
+    }
+
+    .plant-care-info-list {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .plant-care-newsletter {
+        width: 100%;
+    }
+
+    .plant-care-newsletter-list {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .plant-care-newsletter-p {
+        width: 500px;
+    }
+
+    .info-element {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-info {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .account-help-item {
+        padding-right: 30px;
+    }
+
+    .social-media-list {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+.login-bar__menu-btn {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .login-bar__menu-btn {
+        display: block;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    .login-bar__menu-btn svg:hover path {
+        fill: #46a358;
+    }
+
+    .search {
+        padding-left: 0;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .basket {
+        padding-left: 0;
+    }
+
+    .login-bar {
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    .menu {
+        z-index: 1000;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 77px;
+        width: 100%;
+        background-color: #46a358;
+        text-align: center;
+    }
+
+    .menu>li>a {
+        font-size: 32px;
+        text-decoration: none;
+        transition-property: color;
+        border: none;
+        padding: 0;
+    }
+
+    .main-menu:hover>a,
+    .main-menu>.menu-1:hover~a {
+        color: #ffffff;
+    }
+
+    .menu>li {
+        padding-bottom: 10px;
+    }
+
+    .menu .menu-1 {
+        top: 88px;
+        width: 105.8%;
+        text-align: center;
+        left: -40px;
+    }
+
+    .menu-1 li a {
+        font-size: 27px;
+    }
+
+    .priming-pointer {
+        background-position: center right 300px;
+    }
+
+    .menu-1 li:hover>.priming-pointer {
+        background-position: center right 300px;
+    }
+
+    .menu .menu-1 .menu-2 {
+        width: 100.6%;
+        top: 201px;
+        left: -2px;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .green-shop {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 50px;
+    }
+
+    .welcome {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .h1 {
+        font-size: 60px;
+        line-height: 60px;
+        width: 670px;
+    }
+
+    .last-p {
+        width: 635px;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .shop-btn {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .section-items {
+        flex-direction: column;
+    }
+
+    .left-bar {
+        width: 100%;
+    }
+
+    .categories {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .list-item {
+        font-size: 25px;
+    }
+
+    .price-range {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    #slider-range {
+        height: 8px;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    #slider-range .ui-slider-handle {
+        top: -10px;
+        width: 30px;
+        height: 30px;
+        border: 5px solid white;
+    }
+
+    label[for="amount"] {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    #amount {
+        width: 130px;
+        line-height: 20px;
+        font-size: 20px;
+    }
+
+    .slider-range-btn {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .size {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .checkbox-text {
+        font-size: 25px;
+    }
+
+    .checkbox-text::before {
+        width: 30px;
+        height: 30px;
+        top: 1px;
+        left: 6px;
+    }
+
+    .right-bar {
+        width: 100%;
+    }
+
+    .up-panel {
+        flex-direction: column;
+    }
+
+    .up-select {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .up-btn {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .up-sort {
+        width: 100%;
+    }
+
+    .sort-by {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .defsort {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .goods-element {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .good-name {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .good-price {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .paginator a {
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
+
+    .paginator a:hover {
+        font-size: 24px;
+    }
+
+    .find-more-p {
+        font-size: 22px;
+    }
+
+    .find-more-btn {
+        font-size: 18px;
+        background-position: 122px 14px;
+    }
+
+    .blog-posts-item {
+        width: 100%;
+    }
+
+    .blog-posts-h {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .blog-posts-p {
+        font-size: 20px;
+    }
+
+    .posts-content-p-green {
+        font-size: 25px;
+        line-height: 25px;
+        padding-bottom: 15px;
+    }
+
+    .posts-content-h {
+        font-size: 42px;
+        line-height: 26px;
+        padding-bottom: 15px;
+    }
+
+    .posts-content-p {
+        font-size: 24px;
+        line-height: 42px;
+        padding-bottom: 15px;
+    }
+
+    .posts-content-btn {
+        font-size: 24px;
+        line-height: 26px;
+        background-position: 120px 4px;
+    }
+
+    .plant-care-info-list {
+        flex-direction: column;
+    }
+
+    .plant-care-img {
+        justify-content: center;
+    }
+
+    .plant-care-info-h {
+        font-size: 27px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    .plant-care-info-p {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .plant-care-newsletter-h {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+    .plant-care-newsletter-input {
+        height: 50px;
+        width: 320px;
+    }
+
+    .plant-care-newsletter-p {
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 125px;
+    }
+
+    .img-responsive {
+        padding-left: 20px;
+    }
+
+    .account-help {
+        flex-direction: column;
+    }
+
+    .account-help-list {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .account-help-item-inset-p {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .account-help-item-inset {
+        list-style-type: none;
+        padding-left: 0;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .account-help-item-inset a {
+        font-size: 20px;
+    }
+
+    .social-media {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-media-item-p {
+        font-size: 32px;
+        line-height: 32px;
+    }
 }

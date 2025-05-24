@@ -57,6 +57,17 @@
                 </ul>
             </nav>
             <div class="login-bar">
+                <button type="button" class="login-bar__menu-btn">
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="style=fill">
+                            <g id="menu-hamburger">
+                                <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.25 1.25C3.93629 1.25 1.25 3.93629 1.25 7.25V16.75C1.25 20.0637 3.93629 22.75 7.25 22.75H16.75C20.0637 22.75 22.75 20.0637 22.75 16.75V7.25C22.75 3.93629 20.0637 1.25 16.75 1.25H7.25ZM4.84615 7C4.51691 7 4.25 7.33579 4.25 7.75C4.25 8.16421 4.51691 8.5 4.84615 8.5H19.1538C19.4831 8.5 19.75 8.16421 19.75 7.75C19.75 7.33579 19.4831 7 19.1538 7H4.84615ZM4.25 12.25C4.25 11.8358 4.51691 11.5 4.84615 11.5H19.1538C19.4831 11.5 19.75 11.8358 19.75 12.25C19.75 12.6642 19.4831 13 19.1538 13H4.84615C4.51691 13 4.25 12.6642 4.25 12.25ZM4.84615 16C4.51691 16 4.25 16.3358 4.25 16.75C4.25 17.1642 4.51691 17.5 4.84615 17.5H19.1538C19.4831 17.5 19.75 17.1642 19.75 16.75C19.75 16.3358 19.4831 16 19.1538 16H4.84615Z"
+                                    fill="#3D3D3D" />
+                            </g>
+                        </g>
+                    </svg>
+                </button>
                 <button type="button" class="search">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -75,6 +86,8 @@
                 <a class="login" href="#">Login</a>
             </div>
         </header>
+    </div>
+    <div class="wrapper">
         <main class="main">
             <section class="section-better-planet">
                 <div class="green-shop">
@@ -140,7 +153,7 @@
                             <button type="button" class="up-btn">Sale</button>
                         </div>
                         <div class="up-sort">
-                            <p>Sort by:</p>
+                            <p class="sort-by">Sort by:</p>
                             <button type="button"> <span class="defsort">Default sorting</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
                                     fill="none">
@@ -696,7 +709,7 @@
                 <div class="blog-posts-list">
                     <div class="blog-posts-item">
                         <article class="blog-posts-content">
-                            <img class="img-responsive" src="./img/care-tips01.png">
+                            <img class="img-responsive blog-posts-content-img" src="./img/care-tips01.png">
                             <div class="posts-content-txt">
                                 <p class="posts-content-p-green">September 12 I Read in 6 minutes</p>
                                 <h3 class="posts-content-h">Cactus & Succulent Care Tips</h3>
@@ -710,7 +723,7 @@
                     </div>
                     <div class="blog-posts-item">
                         <article class="blog-posts-content">
-                            <img class="img-responsive" src="./img/care-tips02.png">
+                            <img class="img-responsive blog-posts-content-img" src="./img/care-tips02.png">
                             <div class="posts-content-txt">
                                 <p class="posts-content-p-green">September 12 I Read in 6 minutes</p>
                                 <h3 class="posts-content-h">Cactus & Succulent Care Tips</h3>
@@ -723,7 +736,7 @@
                     </div>
                     <div class="blog-posts-item">
                         <article class="blog-posts-content">
-                            <img class="img-responsive" src="./img/care-tips03.jpg">
+                            <img class="img-responsive blog-posts-content-img" src="./img/care-tips03.jpg">
                             <div class="posts-content-txt">
                                 <p class="posts-content-p-green">September 12 I Read in 6 minutes</p>
                                 <h3 class="posts-content-h">Cactus & Succulent Care Tips</h3>
@@ -736,7 +749,7 @@
                     </div>
                     <div class="blog-posts-item">
                         <article class="blog-posts-content">
-                            <img class="img-responsive" src="./img/care-tips04.png">
+                            <img class="img-responsive blog-posts-content-img" src="./img/care-tips04.png">
                             <div class="posts-content-txt">
                                 <p class="posts-content-p-green">September 12 I Read in 6 minutes</p>
                                 <h3 class="posts-content-h">Cactus & Succulent Care Tips</h3>
@@ -750,7 +763,9 @@
                 </div>
             </section>
         </main>
-        <footer>
+    </div>
+    <footer>
+        <div class="wrapper">
             <section class="plant-care">
                 <h2 class="visually-hidden">Plant care information</h2>
                 <div class="plant-care-info-list">
@@ -794,7 +809,9 @@
                     </article>
                 </div>
             </section>
-            <div class="contact-info-background">
+        </div>
+        <div class="contact-info-background">
+            <div class="wrapper">
                 <section class="contact-info">
                     <h2 class="visually-hidden">Contact information</h2>
                     <a class="logo" href="#">
@@ -806,6 +823,8 @@
                     <a class="contact-info-tel" href="callto:+88 01911 717 490">+88 01911 717 490</a>
                 </section>
             </div>
+        </div>
+        <div class="wrapper">
             <section class="account-help">
                 <h2 class="visually-hidden">Help & Guide Categories Social Media</h2>
                 <div class="account-help-list">
@@ -893,8 +912,8 @@
                 </div>
             </section>
             <p class="all-rights">© 2021 GreenShop. All Rights Reserved.</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
