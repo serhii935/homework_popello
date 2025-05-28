@@ -76,7 +76,7 @@
 
 .wrapper {
     max-width: 1220px;
-    min-width: 767px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -312,7 +312,7 @@
     font-weight: 900;
     line-height: 70px;
     text-transform: uppercase;
-    width: 570px;
+    max-width: 570px;
     margin-bottom: 5px;
 }
 
@@ -325,7 +325,7 @@
     font-size: 14px;
     line-height: 24px;
     padding-bottom: 52px;
-    width: 535px;
+    max-width: 535px;
 }
 
 .shop-btn {
@@ -348,7 +348,7 @@
 
 .img {
     display: flex;
-    width: 100%;
+    width: 50%;
     justify-content: end;
 }
 
@@ -1233,7 +1233,7 @@ label[for="amount"] {
     .h1 {
         font-size: 50px;
         line-height: 50px;
-        width: 470px;
+        max-width: 470px;
     }
 
     .green-shop {
@@ -1244,7 +1244,7 @@ label[for="amount"] {
 
     .last-p {
         padding-bottom: 30px;
-        width: 435px;
+        max-width: 435px;
     }
 
     .left-bar {
@@ -1375,19 +1375,29 @@ label[for="amount"] {
     }
 
     .search {
-        padding-left: 0;
+        padding: 0;
     }
 
     .logo {
-        width: 30%;
+        width: 40%;
     }
 
     .basket {
-        padding-left: 0;
+        padding: 0;
+    }
+
+    .login {
+        padding: 8px 9px 7px 9px;
+        background-image: none;
+        margin-left: 0;
+    }
+
+    .login:hover {
+        background-image: none;
     }
 
     .login-bar {
-        width: 70%;
+        width: 60%;
         justify-content: space-between;
     }
 
@@ -1450,30 +1460,30 @@ label[for="amount"] {
 
     .green-shop {
         width: 100%;
-        padding-top: 15px;
-        padding-bottom: 50px;
+        padding: 15px;
     }
 
     .welcome {
-        font-size: 20px;
+        font-size: 15px;
         line-height: 20px;
     }
 
     .h1 {
-        font-size: 60px;
-        line-height: 60px;
-        width: 670px;
+        font-size: 35px;
+        line-height: 40px;
+        max-width: 370px;
     }
 
     .last-p {
-        width: 635px;
+        max-width: 335px;
         font-size: 24px;
         line-height: 34px;
     }
 
     .shop-btn {
-        font-size: 25px;
-        line-height: 25px;
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 
     .section-items {
@@ -1482,6 +1492,10 @@ label[for="amount"] {
 
     .left-bar {
         width: 100%;
+    }
+
+    .sale-baner {
+        display: none;
     }
 
     .categories {
@@ -1500,7 +1514,7 @@ label[for="amount"] {
 
     #slider-range {
         height: 8px;
-        width: 300px;
+        max-width: 300px;
         border-radius: 10px;
     }
 
@@ -1544,6 +1558,7 @@ label[for="amount"] {
     }
 
     .right-bar {
+        padding-top: 15px;
         width: 100%;
     }
 
@@ -1557,7 +1572,7 @@ label[for="amount"] {
     }
 
     .up-btn {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 25px;
     }
 
@@ -1573,11 +1588,6 @@ label[for="amount"] {
     .defsort {
         font-size: 25px;
         line-height: 25px;
-    }
-
-    .goods-element {
-        padding-bottom: 20px;
-        width: 100%;
     }
 
     .good-name {
@@ -1623,21 +1633,21 @@ label[for="amount"] {
     }
 
     .posts-content-p-green {
-        font-size: 25px;
-        line-height: 25px;
-        padding-bottom: 15px;
+        font-size: 20px;
+        line-height: 20px;
+        padding-bottom: 10px;
     }
 
     .posts-content-h {
-        font-size: 42px;
-        line-height: 26px;
-        padding-bottom: 15px;
+        font-size: 29px;
+        line-height: 30px;
+        padding-bottom: 10px;
     }
 
     .posts-content-p {
-        font-size: 24px;
-        line-height: 42px;
-        padding-bottom: 15px;
+        font-size: 15px;
+        line-height: 20px;
+        padding-bottom: 10px;
     }
 
     .posts-content-btn {
@@ -1695,10 +1705,6 @@ label[for="amount"] {
         height: 125px;
     }
 
-    .img-responsive {
-        padding-left: 20px;
-    }
-
     .account-help {
         flex-direction: column;
     }
@@ -1733,5 +1739,33 @@ label[for="amount"] {
     .social-media-item-p {
         font-size: 32px;
         line-height: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .info-more {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .find-more-img {
+        width: 100%;
+    }
+
+    .find-more-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .goods-element {
+        padding-bottom: 20px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .contact-info-map {
+        text-align: center;
     }
 }
