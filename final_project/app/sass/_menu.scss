@@ -1,0 +1,113 @@
+.menu {
+    &__list {
+        display: none;
+        position: absolute;
+        right: -10px;
+        top: 79px;
+        left: -10px;
+        background-color: #ffffff;
+        list-style: none;
+        padding: 12px;
+        text-align: center;
+
+        & li {
+            margin-bottom: 15px;
+            border-radius: 12px;
+            background-color: #f5f5fa;
+            padding: 7px 0;
+
+
+        }
+
+        & li:hover {
+            background-color: #e6e6f0;
+        }
+
+        & a {
+            text-decoration: none;
+            color: #24a3ff;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+        }
+
+        & a.active {
+            color: #f0145a;
+        }
+
+    }
+
+    &__btn {
+        background-image: url(../img/hamburger.svg);
+        background-color: transparent;
+        border: none;
+        width: 32px;
+        height: 33px;
+        border-radius: 8px;
+        margin-top: 12px;
+    }
+
+    &__btn:hover {
+        background-color: #e6e6f0;
+    }
+
+    &__btn.active {
+        background-image: url(../img/close.svg);
+    }
+}
+
+@media (min-width:768px) {
+    .menu {
+        &__btn {
+            display: none;
+        }
+
+        &__list {
+            position: static;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            padding: 0;
+
+            & li:hover {
+                background-color: transparent;
+            }
+
+            & li {
+                background-color: transparent;
+                padding: 30px 15px 0 0px;
+
+                & a {
+                    margin: 0;
+                    color: #ffffff;
+                    font-size: 16px;
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid transparent;
+                }
+
+                & a:hover {
+                    border-color: #ffffff;
+                }
+
+                & a.active {
+                    color: #f0145a;
+                    border-color: #f0145a;
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .menu {
+        &__list {
+            white-space: nowrap;
+            justify-content: flex-end;
+
+            & li {
+                padding: 0px 0px 0 15px;
+            }
+        }
+    }
+}

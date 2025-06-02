@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en ua">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+
+<body class="body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <ul class="lang">
+                    <li><a href="#">ук</a></li>
+                    <li><a href="#">pl</a></li>
+                    <li><a href="#" class="active">en</a></li>
+                </ul>
+                <div class="header__adress">Kyiv, Mechnikova str., 14/1</div>
+                <a class="header__tel" href="tel:">0800 211 927</a>
+                <a href="#" class="header__fb">
+                    <svg class="icon__facebook">
+                        <use xlink:href="img/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__logo-box">
+                <a class="header__logo-box-logo" href="#">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <span class="header__breadcrumbs">about us</span>
+            </div>
+            <nav class="menu">
+                <button type="button" class="menu__btn"></button>
+                <ul class="menu__list">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">team</a></li>
+                    <li><a class="active" href="#">publications</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+
+
+
+
+
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
