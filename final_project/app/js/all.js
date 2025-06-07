@@ -4018,3 +4018,11 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
     return o;
   };
 });
+$('.js-slider').slick({
+  infinite: true,
+  dots: true,
+  arrows: false,
+  dotsClass: 'slider__dots',
+  slidesToShow: 1,
+  slidesToScroll: 1
+});

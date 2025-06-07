@@ -1,0 +1,89 @@
+.services {
+    &__btn {
+        text-decoration: none;
+        padding-right: 14px;
+        color: #24A3FF;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background-image: url(../img/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: 83px 1px;
+        padding-bottom: 10px;
+    }
+
+    &__h2 {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 1em;
+        background-image: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 13px 0 30px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 -15px;
+
+        &__inset {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 30px;
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                &__h3 {
+                    color: #24A3FF;
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 1em;
+                    padding-top: 30px;
+                    padding-bottom: 15px;
+                }
+
+                &__p {
+                    color: #ffffff;
+                    font-size: 16px;
+                    line-height: 1.62em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .services {
+        &__block {
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 0 -30px;
+            width: 100%;
+
+            &__inset {
+                width: 50%;
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-bottom: 60px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .services {
+        &__block {
+            &__inset {
+                width: 33.33333%;
+            }
+        }
+    }
+}

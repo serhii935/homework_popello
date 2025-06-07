@@ -1,0 +1,102 @@
+.slider {
+
+    &__item {
+        &__pic {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        &__text {
+            background-color: #F5F5FA;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            padding: 30px;
+
+            &__btn {
+                text-decoration: none;
+                color: #24A3FF;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 1em;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                padding-right: 12px;
+                background: url(../img/arrow.svg) no-repeat center right;
+            }
+
+            &__p1 {
+                padding-top: 5px;
+                padding-bottom: 30px;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 1em;
+                background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &__p2 {
+                color: #B3B3BA;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1em;
+                padding-bottom: 6px;
+            }
+
+            &__p3 {
+                color: #B3B3BA;
+                font-size: 14px;
+                line-height: 1.57em;
+            }
+        }
+    }
+
+    &__dots {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+
+        li {
+            padding: 0 7px;
+
+            &.slick-active {
+                button {
+                    opacity: 1;
+                }
+            }
+        }
+
+        button {
+            margin-top: 30px;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            border: none;
+            border-radius: 50%;
+            background-color: #24A3FF;
+            opacity: 0.2;
+            font-size: 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .slider {
+
+        &__item {
+            display: flex !important;
+
+            &__pic {
+                border-top-right-radius: 12px;
+                border-bottom-left-radius: 12px;
+            }
+
+            &__text {
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 12px;
+            }
+        }
+    }
+}
