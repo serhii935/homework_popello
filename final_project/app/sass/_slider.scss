@@ -12,18 +12,6 @@
             border-bottom-right-radius: 12px;
             padding: 30px;
 
-            &__btn {
-                text-decoration: none;
-                color: #24A3FF;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 1em;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                padding-right: 12px;
-                background: url(../img/arrow.svg) no-repeat center right;
-            }
-
             &__p1 {
                 padding-top: 5px;
                 padding-bottom: 30px;
@@ -89,8 +77,12 @@
             display: flex !important;
 
             &__pic {
-                border-top-right-radius: 12px;
-                border-bottom-left-radius: 12px;
+
+                img {
+                    height: 100%;
+                    border-top-left-radius: 12px;
+                    border-bottom-left-radius: 12px;
+                }
             }
 
             &__text {

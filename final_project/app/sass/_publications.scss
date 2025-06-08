@@ -1,0 +1,97 @@
+.publications {
+    background-color: #F5F5FA;
+    padding-top: 30px;
+
+    &__h2 {
+        padding-top: 5px;
+        padding-bottom: 30px;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1em;
+        background-image: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__list {
+        display: grid;
+        gap: 30px;
+
+        &__inset {
+            border-radius: 8px;
+            background-color: #ffffff;
+
+            &__text {
+                padding: 30px;
+
+                &__btn {
+                    display: block;
+                    text-decoration: none;
+                    color: #24A3FF;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 1em;
+                    padding-bottom: 15px;
+                }
+
+                &__p1 {
+                    color: #B3B3BA;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 1em;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    padding-bottom: 15px;
+                }
+
+                &__p2 {
+                    padding-top: 15px;
+                    color: #000000;
+                    font-size: 14px;
+                    line-height: 1.57em;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 4px;
+                        background-color: #E6E6F0;
+                        position: absolute;
+                        top: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .publications {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+
+            &__inset {
+
+                &-item3 {
+                    grid-column: span 2;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .publications {
+        &__list {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &__inset {
+
+                &-item3 {
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+}

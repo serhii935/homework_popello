@@ -1,0 +1,128 @@
+.trust {
+    padding-top: 60px;
+
+    &__h2 {
+        color: #323264;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        &__inset {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 36px;
+            height: 120px;
+            width: 100%;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            &-color1 {
+                background-color: #1C4280;
+            }
+
+            &-color2 {
+                background-color: #143646;
+            }
+
+            &-color3 {
+                background-image: linear-gradient(0deg, #F48B30 0%, #F48B30 100%);
+            }
+
+            &-color4 {
+                background-color: #9E4DC3;
+            }
+
+            &-color5 {
+                background-color: #FD9339;
+            }
+
+            &-color6 {
+                background-color: #E2E2E4;
+            }
+
+            &-color7 {
+                background-color: #C71C36;
+                display: none;
+            }
+
+            &-color8 {
+                background-color: #DCF3F9;
+                display: none;
+            }
+
+            &-color9 {
+                background-color: #EAEAEA;
+                display: none;
+            }
+
+            &-color10 {
+                background-color: #282240;
+                display: none;
+            }
+
+            &-color11 {
+                background-color: #1D4568;
+                display: none;
+            }
+
+            &-color12 {
+                background-color: #000000;
+                display: none;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+
+    .trust {
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            &__inset {
+                width: 33.333%;
+
+                &-color7 {
+                    display: block;
+                }
+
+                &-color8 {
+                    display: block;
+                }
+
+                &-color9 {
+                    display: block;
+                }
+
+                &-color10 {
+                    display: block;
+                }
+
+                &-color11 {
+                    display: block;
+                }
+
+                &-color12 {
+                    display: block;
+                }
+            }
+        }
+    }
+}
