@@ -1,0 +1,192 @@
+.footer {
+    padding-top: 30px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #E6E6F0;
+        position: absolute;
+        top: 0px;
+    }
+
+    &__background {
+        background-color: #F5F5FA;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__adress {
+        color: #323264;
+        font-size: 16px;
+        line-height: 1em;
+        padding-bottom: 10px;
+    }
+
+    &__map {
+        text-decoration: none;
+        color: #24A3FF;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 21px;
+        transition-duration: 0.2s;
+        transition-property: opacity;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__fb {
+        padding-bottom: 10px;
+        transition-duration: 0.2s;
+        transition-property: opacity;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__tel {
+        text-decoration: none;
+        color: #46466E;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1em;
+        padding-bottom: 10px;
+        transition-duration: 0.2s;
+        transition-property: opacity;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__mail {
+        text-decoration: none;
+        color: #24A3FF;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1em;
+        padding-bottom: 30px;
+        transition-duration: 0.2s;
+        transition-property: opacity;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__hlegal {
+        color: #B3B3BA;
+        font-size: 16px;
+        line-height: 1em;
+        padding-bottom: 30px;
+
+        &-uppercase {
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+
+        &__navigation {
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 21px;
+        }
+
+        &__contact {
+            flex-direction: row;
+            justify-content: center;
+            grid-column: span 2;
+            padding-bottom: 30px;
+        }
+
+        &__adress {
+            padding: 0;
+        }
+
+        &__map {
+            padding: 0 0 0 26px;
+            position: relative;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #B3B3BA;
+                position: absolute;
+                top: 3px;
+                left: 10px;
+            }
+        }
+
+        &__fb {
+            padding: 0;
+        }
+
+        &__tel {
+            padding: 0 0 0 26px;
+            position: relative;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #B3B3BA;
+                position: absolute;
+                top: 5px;
+                left: 9px;
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #B3B3BA;
+                position: absolute;
+                top: 5px;
+                left: 140px;
+            }
+        }
+
+        &__mail {
+            padding: 0 0 0 26px;
+        }
+
+        &__hlegal {
+            padding: 0;
+            grid-column: 2/3;
+            grid-row: 3/1;
+            margin-left: auto;
+        }
+    }
+}

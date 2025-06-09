@@ -141,8 +141,9 @@
         </div>
     </div>
     <footer>
-        <div class="wrapper">
-            <section class="team">
+
+        <section class="team">
+            <div class="wrapper">
                 <div class="slider js-slider">
                     <article class="slider__item">
                         <div class="slider__item__pic">
@@ -190,8 +191,8 @@
                         </div>
                     </article>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <section class="trust">
             <h2 class="trust__h2">They already trust us</h2>
             <div class="trust__list">
@@ -239,32 +240,69 @@
                 <h2 class="publications__h2">We have something to tell</h2>
                 <div class="publications__list">
                     <article class="publications__list__inset">
-                        <img class="img-responsive" src="./img/associate.png">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="./img/associate-992.png">
+                            <img class="img-responsive" src="./img/associate.png">
+                        </picture>
                         <div class="publications__list__inset__text">
                             <a href="#" class="publications__list__inset__text__btn">Equity associate</a>
                             <p class="publications__list__inset__text__p1">April 22</p>
-                            <p class="publications__list__inset__text__p2">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                            <p class="publications__list__inset__text__p2">I'm a jun on projects. I am a co-owner of a
+                                law firm. How it happened. Before entering my parents told me that if I…</p>
                         </div>
                     </article>
                     <article class="publications__list__inset">
-                        <img class="img-responsive" src="./img/gdpr.png">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="./img/gdpr-992.png">
+                            <img class="img-responsive" src="./img/gdpr.png">
+                        </picture>
                         <div class="publications__list__inset__text">
-                            <a href="#" class="publications__list__inset__text__btn">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</a>
+                            <a href="#" class="publications__list__inset__text__btn">Penalty for the Good Corporation:
+                                what will happen to Google and others for violating the GDPR</a>
                             <p class="publications__list__inset__text__p1">September 29</p>
-                            <p class="publications__list__inset__text__p2">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                            <p class="publications__list__inset__text__p2">And why the recovery of 50 million euros
+                                could be a fateful precedent According to Mind.ua January 21 National Commission for
+                                Data Protection.</p>
                         </div>
                     </article>
                     <article class="publications__list__inset publications__list__inset-item3">
-                        <img class="img-responsive" src="./img/millennial.png">
+                        <picture>
+                            <source media="(min-width:768px)" srcset="./img/millennial-768.png">
+                            <img class="img-responsive" src="./img/millennial.png">
+                        </picture>
                         <div class="publications__list__inset__text">
                             <a href="#" class="publications__list__inset__text__btn">Millennial Testament</a>
                             <p class="publications__list__inset__text__p1">August 19</p>
-                            <p class="publications__list__inset__text__p2">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                            <p class="publications__list__inset__text__p2">What and how modern vloggers, opinion leaders
+                                and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X
+                                looks like this: an apartment in…</p>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
+        <div class="footer__background">
+            <div class="wrapper">
+                <section class="footer">
+                    <div class="footer__navigation">
+                        <p class="footer__adress">Kyiv, Mechnikova str., 14/1</p>
+                        <a href="#" class="footer__map">On map</a>
+                    </div>
+                    <div class="footer__contact">
+                        <a href="#" class="footer__fb">
+                            <svg class="icon__facebook1">
+                                <use xlink:href="img/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="tel:+380800211927" class="footer__tel">0800 211 927</a>
+                        <a href="mailto:contact@forstudy.space" class="footer__mail">contact@forstudy.space</a>
+                    </div>
+                    <p class="footer__hlegal">© <span class="footer__hlegal-uppercase">2021 hlegal</span> Law company,
+                        <span class="footer__hlegal-uppercase">llc</span>
+                    </p>
+                </section>
+            </div>
+        </div>
     </footer>
     <script src="./js/all.js"></script>
 </body>
