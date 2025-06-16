@@ -10,41 +10,51 @@
         padding: 12px;
         text-align: center;
 
-        & li {
+        &__inset {
             margin-bottom: 15px;
             border-radius: 12px;
             background-color: #f5f5fa;
             padding: 7px 0;
+            transition-duration: 0.2s;
+            transition-property: background-color;
 
+            &__link {
+                text-decoration: none;
+                color: #24a3ff;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 100%;
+            }
 
+            &__link.active {
+                color: #f0145a;
+            }
         }
 
-        & li:hover {
+        &__inset:hover {
             background-color: #e6e6f0;
-        }
-
-        & a {
-            text-decoration: none;
-            color: #24a3ff;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 100%;
-        }
-
-        & a.active {
-            color: #f0145a;
         }
 
     }
 
     &__btn {
-        background-image: url(../img/hamburger.svg);
         background-color: transparent;
         border: none;
         width: 32px;
         height: 33px;
         border-radius: 8px;
         margin-top: 12px;
+        transition-duration: 0.2s;
+        transition-property: background-color;
+
+        &_dark {
+            background-image: url(../img/hamburger_dark.svg);
+        }
+
+        &_light {
+            background-image: url(../img/hamburger_light.svg);
+        }
+
     }
 
     &__btn:hover {
@@ -52,7 +62,13 @@
     }
 
     &__btn.active {
-        background-image: url(../img/close.svg);
+        &_dark {
+            background-image: url(../img/close_dark.svg);
+        }
+
+        &_light {
+            background-image: url(../img/close_light.svg);
+        }
     }
 }
 
@@ -68,28 +84,44 @@
             display: flex;
             align-items: center;
             padding: 0;
+            transition-duration: 0.2s;
+            transition-property: background-color;
 
-            & li:hover {
+            &__inset:hover {
                 background-color: transparent;
             }
 
-            & li {
+            &__inset {
                 background-color: transparent;
                 padding: 30px 15px 0 0px;
 
-                & a {
+                &__link {
                     margin: 0;
                     color: #ffffff;
                     font-size: 16px;
                     padding-bottom: 3px;
                     border-bottom: 2px solid transparent;
+                    transition-duration: 0.2s;
+                    transition-property: border-color;
+
+                    &_light {
+                        color: #24a3ff;
+                    }
+
+                    &_dark {
+                        color: #ffffff;
+                    }
                 }
 
-                & a:hover {
+                &__link_dark:hover {
                     border-color: #ffffff;
                 }
 
-                & a.active {
+                &__link_light:hover {
+                    border-color: #24a3ff;
+                }
+
+                &__link.active {
                     color: #f0145a;
                     border-color: #f0145a;
                 }
@@ -105,7 +137,7 @@
             white-space: nowrap;
             justify-content: flex-end;
 
-            & li {
+            &__inset {
                 padding: 0px 0px 0 15px;
             }
         }

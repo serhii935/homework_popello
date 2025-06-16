@@ -40,25 +40,25 @@
     &::before {
         content: '';
         display: inline-block;
-        width: 93.4%;
         height: 10px;
         background-color: #CACADB;
         border-radius: 0px 0px 12px 12px;
         position: absolute;
+        left: 10px;
+        right: 10px;
         bottom: -10px;
-        left: 11px;
     }
 
     &::after {
         content: '';
         display: inline-block;
-        width: 87.8%;
         height: 10px;
         background-color: #E7E7F2;
         border-radius: 0px 0px 12px 12px;
         position: absolute;
-        bottom: -20px;
         left: 20px;
+        right: 20px;
+        bottom: -20px;
     }
 }
 

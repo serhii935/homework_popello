@@ -1,0 +1,17 @@
+.link {
+    &_light {
+        color: #24A3FF;
+    }
+
+    &_light:hover {
+        border-color: #24A3FF;
+    }
+
+    &_dark {
+        color: #ffffff;
+    }
+
+    &_dark:hover {
+        border-color: #ffffff;
+    }
+}
