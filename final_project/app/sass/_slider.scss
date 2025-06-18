@@ -1,5 +1,16 @@
 .slider {
     &__item {
+
+        &_about {
+            border-radius: 12px;
+            background-color: #ffffff;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            margin: 0 20px;
+            height: 90px;
+        }
+
         &__pic {
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
@@ -66,6 +77,12 @@
             background-color: #24A3FF;
             opacity: 0.2;
             font-size: 0;
+            transition-duration: 0.2s;
+            transition-property: opacity;
+        }
+
+        button:hover {
+            opacity: 0.6;
         }
     }
 }
@@ -74,7 +91,14 @@
     .slider {
 
         &__item {
-            display: flex !important;
+
+            &_about {
+                height: 110px;
+            }
+
+            &_homepage {
+                display: flex !important;
+            }
 
             &__pic {
 

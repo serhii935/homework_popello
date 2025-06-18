@@ -59,7 +59,7 @@
         transition-duration: 0.2s;
         transition-property: fill;
 
-        &:hover use{
+        &:hover use {
             fill: #f0145a;
         }
     }
@@ -108,6 +108,89 @@
 
 @media (min-width: 768px) {
     .footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    &__navigation {
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 21px;
+    }
+
+    &__contact {
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+
+    &__adress {
+      padding: 0;
+    }
+
+    &__map {
+      padding: 0 0 0 26px;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #B3B3BA;
+        position: absolute;
+        top: 3px;
+        left: 10px;
+      }
+    }
+
+    &__fb {
+      padding: 0;
+    }
+
+    &__tel {
+      padding: 0 0 0 26px;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #B3B3BA;
+        position: absolute;
+        top: 5px;
+        left: 9px;
+      }
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #B3B3BA;
+        position: absolute;
+        top: 5px;
+        left: 140px;
+      }
+    }
+
+    &__mail {
+      padding: 0 0 0 26px;
+    }
+
+    &__hlegal {
+      padding: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+    .footer {
         grid-template-columns: 1fr 1fr;
         justify-items: start;
 
@@ -122,64 +205,6 @@
             justify-content: center;
             grid-column: span 2;
             padding-bottom: 30px;
-        }
-
-        &__adress {
-            padding: 0;
-        }
-
-        &__map {
-            padding: 0 0 0 26px;
-            position: relative;
-
-            &::before {
-                content: '';
-                display: inline-block;
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background-color: #B3B3BA;
-                position: absolute;
-                top: 3px;
-                left: 10px;
-            }
-        }
-
-        &__fb {
-            padding: 0;
-        }
-
-        &__tel {
-            padding: 0 0 0 26px;
-            position: relative;
-
-            &::before {
-                content: '';
-                display: inline-block;
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background-color: #B3B3BA;
-                position: absolute;
-                top: 5px;
-                left: 9px;
-            }
-
-            &::after {
-                content: '';
-                display: inline-block;
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background-color: #B3B3BA;
-                position: absolute;
-                top: 5px;
-                left: 140px;
-            }
-        }
-
-        &__mail {
-            padding: 0 0 0 26px;
         }
 
         &__hlegal {
