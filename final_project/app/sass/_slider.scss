@@ -20,14 +20,14 @@
             background-color: #F5F5FA;
             border-bottom-left-radius: 12px;
             border-bottom-right-radius: 12px;
-            padding: 30px;
+            padding: 29px 45px;
 
             &__p1 {
-                padding-top: 5px;
-                padding-bottom: 30px;
+                padding-top: 3px;
+                padding-bottom: 27px;
                 font-size: 30px;
                 font-weight: 700;
-                line-height: 1em;
+                line-height: 1.24em;
                 background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -39,7 +39,7 @@
                 color: #B3B3BA;
                 font-size: 16px;
                 font-weight: 700;
-                line-height: 1em;
+                line-height: 1.34em;
                 padding-bottom: 6px;
             }
 
@@ -87,6 +87,23 @@
     }
 }
 
+@media (min-width: 768px) {
+    .slider {
+
+        &__item {
+
+            &__text {
+                padding: 29px 30px;
+
+                &__p1 {
+                    font-size: 38px;
+                    line-height: 1.22em;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .slider {
 
@@ -110,6 +127,7 @@
             }
 
             &__text {
+                width: 132%;
                 border-bottom-left-radius: 0;
                 border-top-right-radius: 12px;
             }

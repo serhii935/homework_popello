@@ -1,3 +1,9 @@
-.team{
-    padding-top: 30px;
+.team {
+    padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding-top: 80px;
+    }
 }

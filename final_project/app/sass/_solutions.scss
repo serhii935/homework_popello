@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 26px;
+    padding-bottom: 11.5px;
 
     &__h {
         font-weight: 700;
         font-size: 38px;
-        line-height: 100%;
+        line-height: 1.13em;
         text-align: center;
-        padding: 229px 0 292px;
+        padding: 144px 0 163px;
     }
 
     &__btn {
@@ -19,10 +19,11 @@
         padding: 21px;
         transition-duration: 0.2s;
         transition-property: background-image;
-        &:hover{
+
+        &:hover {
             background-image: url(../img/scroll_hover.svg);
         }
-        
+
     }
 
     &__box {
@@ -33,20 +34,22 @@
 
         &__list {
             width: 100%;
+            padding-top: 62px;
             padding-bottom: 30px;
         }
 
         &__text {
             position: relative;
-            padding-top: 30px;
+            padding-top: 23px;
 
             &::before {
                 content: "";
-                width: 100%;
+                width: 91%;
                 height: 4px;
                 background-color: rgba(255, 255, 255, 0.3);
                 position: absolute;
-                top: 0px;
+                top: 3px;
+                left: 15px;
             }
         }
     }
@@ -54,7 +57,6 @@
     &__list {
         display: flex;
         align-items: flex-start;
-        padding-left: 30px;
         list-style: none;
         padding: 0;
         overflow: auto;
@@ -73,14 +75,16 @@
             cursor: pointer;
             background-color: transparent;
             border: none;
-            margin-right: 50px;
-            font-size: 40px;
+            padding-left: 15px;
+            margin-right: 23px;
+            font-size: 30px;
             font-weight: 700;
             line-height: 1em;
             color: #b3b3ba;
             transition-duration: 0.2s;
             transition-property: opacity;
-            &:hover{
+
+            &:hover {
                 opacity: 0.7;
             }
         }
@@ -93,24 +97,80 @@
         &__h2 {
             color: #ffffff;
             font-family: Montserrat;
-            font-size: 30px;
+            font-size: 20px;
             font-weight: 700;
-            line-height: 1em;
+            line-height: 1.1em;
         }
 
         &__p {
             padding-top: 30px;
             color: #ffffff;
             font-size: 19px;
-            line-height: 1.57em;
+            line-height: 1.6em;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .solutions {
+        padding-bottom: 56px;
+
+        &__h {
+            padding: 261px 0 418px;
+        }
+
+        &__box {
+
+            &__list {
+                padding-top: 95px;
+                padding-bottom: 63px;
+            }
+
+            &__text {
+                padding-top: 65px;
+
+                &::before {
+                    width: 100%;
+                    top: -2px;
+                    left: 0px;
+                }
+            }
+        }
+
+        &__list {
+
+            &__btn {
+                font-size: 38px;
+                letter-spacing: 1px;
+                padding-left: 0px;
+                margin-right: 30px;
+            }
+        }
+
+        &__info {
+            padding: 0;
+
+            &__h2 {
+                font-size: 30px;
+            }
+
+            &__p {
+                padding-top: 32px;
+            }
         }
     }
 }
 
 @media (min-width: 992px) {
     .solutions {
+        padding-bottom: 2px;
+
+        &__h {
+            padding: 237px 0 289px;
+        }
+
         &__box {
-            padding-top: 90px;
+            padding-top: 0px;
             flex-direction: row;
             align-items: center;
 
@@ -120,14 +180,14 @@
 
             &__text {
                 width: 50%;
-                padding: 0 0 0 30px;
+                padding: 0 0 0 47px;
 
                 &::before {
                     content: '';
                     width: 4px;
                     height: 303px;
-                    top: 0px;
-                    left: -12px;
+                    top: 29px;
+                    left: -17px;
                 }
             }
         }
@@ -136,8 +196,24 @@
             display: block;
 
             &__inset {
-                padding: 15px 30px 15px 0;
+                padding: 18px 40px 15px 0;
                 text-align: end;
+            }
+
+            &__btn {
+                letter-spacing: 2px;
+            }
+        }
+
+        &__info {
+
+            &__h2 {
+                padding-top: 34px;
+                line-height: 1.3em;
+            }
+
+            &__p {
+                padding-top: 30px;
             }
         }
     }

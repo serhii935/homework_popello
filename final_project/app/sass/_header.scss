@@ -9,8 +9,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 -30px;
-        padding: 0 30px;
+        margin: 0 -15px;
+        padding: 0 15px;
         padding-top: 10px;
         padding-bottom: 10px;
 
@@ -29,6 +29,7 @@
     }
 
     &__tel {
+        padding-top: 5px;
         text-decoration: none;
         font-weight: 700;
         font-size: 16px;
@@ -57,7 +58,7 @@
     &__logo-box {
         display: flex;
         align-items: center;
-        padding-top: 15px;
+        padding-top: 19px;
         position: relative;
 
         & span {
@@ -83,7 +84,8 @@
         line-height: normal;
         display: flex;
         align-items: start;
-        padding-left: 13px;
+        padding-left: 20px;
+        padding-bottom: 8px;
     }
 
     &__breadcrumbs::before {
@@ -96,8 +98,8 @@
         width: 12px;
         height: 26px;
         position: absolute;
-        top: 15px;
-        left: 70px;
+        top: 19px;
+        left: 73px;
     }
 
 }
@@ -109,8 +111,8 @@
 
         &__top {
             background-color: transparent;
-            padding-top: 50px;
-            padding-bottom: 30px;
+            padding-top: 48px;
+            padding-bottom: 10px;
         }
 
         &__adress {
@@ -192,9 +194,15 @@
             font-size: 36px;
         }
 
+        &__breadcrumbs {
+            padding-left: 30px;
+            padding-bottom: 15px;
+        }
+
         &__breadcrumbs::before {
             width: 21px;
             height: 47px;
+            left: 134px;
         }
 
     }
@@ -212,6 +220,7 @@
 
         &__logo-box {
             grid-row: 1/-1;
+            padding-top: 33px;
         }
 
 
@@ -221,6 +230,11 @@
 
         &__tel {
             white-space: nowrap;
+        }
+
+        &__breadcrumbs::before {
+            left: 134px;
+            top: 50px;
         }
     }
 }

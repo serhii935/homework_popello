@@ -1,5 +1,5 @@
 .quality {
-    padding-top: 30px;
+    padding: 30px 15px 0;
 
     &__text {
 
@@ -7,7 +7,7 @@
             color: #000;
             font-size: 19px;
             line-height: 1.57em;
-            padding-bottom: 30px;
+            padding-bottom: 33px;
         }
     }
 
@@ -27,6 +27,7 @@
 
 @media (min-width: 768px) {
     .quality {
+        padding: 53px 0 0;
 
         &__title {
 
@@ -38,17 +39,28 @@
 }
 
 @media (min-width: 992px) {
-    .quality{
+    .quality {
         display: flex;
         align-items: flex-start;
+        padding: 57px 0 0;
 
-        &__text{
+        &__text {
             width: 50%;
+
+            &__p {
+                padding-bottom: 44px;
+            }
         }
 
-        &__title{
+        &__title {
             width: 50%;
             padding-left: 60px;
+
+            &__h3 {
+                line-height: 1.17em;
+                padding-left: 30px;
+                padding-top: 2px;
+            }
         }
     }
 }

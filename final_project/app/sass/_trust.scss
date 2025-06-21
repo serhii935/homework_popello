@@ -1,5 +1,5 @@
 .trust {
-    padding-top: 60px;
+    padding-top: 62px;
 
     &__h2 {
         color: #323264;
@@ -9,7 +9,7 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         text-align: center;
-        padding-bottom: 30px;
+        padding-bottom: 31px;
     }
 
     &__list {
@@ -125,6 +125,18 @@
                 &-color12 {
                     display: block;
                 }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .trust {
+
+        &__list {
+
+            &__inset {
+                width: 25%;
             }
         }
     }

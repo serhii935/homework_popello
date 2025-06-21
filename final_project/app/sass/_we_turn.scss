@@ -1,14 +1,15 @@
 .we_turn {
-    padding-top: 30px;
+    padding-top: 44px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__text {
+        padding: 0 15px;
 
         &__h3 {
-            font-size: 38px;
+            font-size: 30px;
             font-weight: 700;
             line-height: 1.2em;
             background-image: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
@@ -25,14 +26,14 @@
     }
 
     &__numbers {
-        padding-top: 30px;
-        padding-left: 30px;
+        padding-top: 28px;
+        padding-left: 50px;
         position: relative;
 
         &__inset {
             display: flex;
             align-items: center;
-            padding-bottom: 10px;
+            padding-bottom: 17px;
 
             &__text {
                 padding-left: 8px;
@@ -51,17 +52,18 @@
             line-height: 1em;
 
             &_pad {
-                padding-bottom: 40px;
+                padding-bottom: 46px;
             }
         }
 
         &::before {
             content: "";
             width: 4px;
-            height: 92%;
+            height: 94%;
             background-color: #E6E6F0;
             position: absolute;
-            left: 0px;
+            left: 15px;
+            top: 23px;
         }
     }
 }
@@ -69,6 +71,26 @@
 @media (min-width:768px) {
     .we_turn {
         align-items: flex-start;
+        padding-top: 51px;
+        padding-bottom: 59px;
+
+        &__text {
+            padding: 0;
+
+            &__h3 {
+                font-size: 38px;
+            }
+        }
+
+        &__numbers {
+            padding-top: 26px;
+            padding-left: 34px;
+
+            &::before {
+                left: 0px;
+                top: 22px;
+            }
+        }
     }
 }
 
@@ -76,6 +98,7 @@
     .we_turn {
         flex-direction: row;
         justify-content: center;
+        padding-bottom: 51px;
 
         &__text {
             width: 50%;
@@ -84,11 +107,20 @@
 
         &__numbers {
             width: 50%;
-            padding-left: 60px;
+            padding-left: 98px;
             padding-top: 0;
 
             &::before {
-                left: 30px;
+                left: 64px;
+                top: -1px;
+                height: 102%;
+            }
+
+            &__p {
+
+                &_pad {
+                    padding-bottom: 48px;
+                }
             }
         }
     }
