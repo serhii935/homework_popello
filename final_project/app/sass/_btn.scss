@@ -10,14 +10,19 @@
     padding-right: 14px;
     background: url(../img/arrow.svg) no-repeat center right;
     transition-duration: 0.2s;
-    transition-property: opacity;
+    transition-property: color background-image;
 
     &_publications {
         padding-left: 15px;
     }
 
     &:hover {
-        opacity: 0.7;
+        color: #f0145a;
+        background-image: url(../img/arrow_red.svg);
+    }
+
+    &.active{
+        background-image: url(../img/close.svg);
     }
 }
 

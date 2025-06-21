@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Montserrat-400.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-700.woff" as="font" type="font/woff" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body class="body">
     <div class="wrapper">
-        <header class="header">
+        <header class="header js-header">
             <div class="header__top header__top_light">
                 <ul class="lang">
                     <li><a href="#">ук</a></li>
@@ -32,8 +34,8 @@
                 <span class="header__breadcrumbs">about us</span>
             </div>
             <nav class="menu">
-                <button type="button" class="menu__btn menu__btn_light"></button>
-                <ul class="menu__list">
+                <button type="button" class="menu__btn menu__btn_light js-open-mobile-menu"></button>
+                <ul class="menu__list js-mobile-drop-menu">
                     <li class="menu__list__inset"><a
                             class="menu__list__inset__link menu__list__inset__link_light active"
                             href="./about.html">about us</a>

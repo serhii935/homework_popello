@@ -29,7 +29,7 @@
     }
 
     &__tel {
-        padding-top: 5px;
+        padding-top: 2px;
         text-decoration: none;
         font-weight: 700;
         font-size: 16px;
@@ -131,7 +131,7 @@
                 background-color: #e6e6f0;
                 position: absolute;
                 top: 5px;
-                left: 7px;
+                left: 6px;
             }
 
             &::after {
@@ -143,12 +143,12 @@
                 background-color: #e6e6f0;
                 position: absolute;
                 top: 5px;
-                left: 224px;
+                left: 225px;
             }
         }
 
         &__tel {
-            padding-left: 18px;
+            padding-left: 19px;
             position: relative;
             transition-duration: 0.2s;
             transition-property: color;
@@ -165,13 +165,14 @@
                 border-radius: 50%;
                 background-color: #e6e6f0;
                 position: absolute;
-                top: 5px;
-                left: 127px;
+                top: 6px;
+                left: 128px;
             }
         }
 
         &__fb {
             display: block;
+            padding-top: 1px;
             margin-left: 18px;
             transition-duration: 0.2s;
             transition-property: fill;

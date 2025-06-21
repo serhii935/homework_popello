@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Montserrat-400.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-700.woff" as="font" type="font/woff" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body class="body">
     <div class="background">
         <div class="wrapper">
-            <header class="header">
+            <header class="header js-header">
                 <div class="header__top header__top_dark">
                     <ul class="lang">
                         <li><a href="#">ук</a></li>
@@ -33,8 +35,8 @@
                     <span class="header__breadcrumbs">about us</span>
                 </div>
                 <nav class="menu">
-                    <button type="button" class="menu__btn menu__btn_dark"></button>
-                    <ul class="menu__list">
+                    <button type="button" class="menu__btn menu__btn_dark js-open-mobile-menu"></button>
+                    <ul class="menu__list js-mobile-drop-menu">
                         <li class="menu__list__inset"><a class="menu__list__inset__link menu__list__inset__link_dark"
                                 href="./about.html">about us</a></li>
                         <li class="menu__list__inset"><a class="menu__list__inset__link menu__list__inset__link_dark"
@@ -67,18 +69,18 @@
                                     oriented</button></li>
                         </ul>
                     </div>
-                </div>
-                <div class="solutions__box__text">
-                    <article class="solutions__info">
-                        <h2 class="solutions__info__h2">We turn the idea of legal services</h2>
-                        <p class="solutions__info__p">Consolidating many years of experience and
-                            practice, the company's lawyers
-                            accompany
-                            complex projects and achieve a number of important decisions for the
-                            industry.
-                            Many
-                            of them form the practice of applying the law of the sea in Ukraine.</p>
-                    </article>
+                    <div class="solutions__box__text">
+                        <article class="solutions__info">
+                            <h2 class="solutions__info__h2">We turn the idea of legal services</h2>
+                            <p class="solutions__info__p">Consolidating many years of experience and
+                                practice, the company's lawyers
+                                accompany
+                                complex projects and achieve a number of important decisions for the
+                                industry.
+                                Many
+                                of them form the practice of applying the law of the sea in Ukraine.</p>
+                        </article>
+                    </div>
                 </div>
             </section>
             <section class="services">
@@ -173,8 +175,9 @@
                         <h2 class="visually-hiden">team member slide</h2>
                         <div class="slider__item__pic">
                             <picture>
-                                <source media="(min-width:992px)" srcset="./img/team-member-992.png">
-                                <img class="img-responsive" src="./img/team-member.png" alt="team member">
+                                <source media="(min-width:992px)" srcset="./img/team.png">
+                                <source media="(min-width:420px)" srcset="./img/team-member.png">
+                                <img class="img-responsive" src="./img/team-member-375.png" alt="team member">
                             </picture>
                         </div>
                         <div class="slider__item__text">
@@ -189,8 +192,9 @@
                         <h2 class="visually-hiden">team member slide</h2>
                         <div class="slider__item__pic">
                             <picture>
-                                <source media="(min-width:992px)" srcset="./img/team-member-992.png">
-                                <img class="img-responsive" src="./img/team-member.png" alt="team member">
+                                <source media="(min-width:992px)" srcset="./img/team.png">
+                                <source media="(min-width:420px)" srcset="./img/team-member.png">
+                                <img class="img-responsive" src="./img/team-member-375.png" alt="team member">
                             </picture>
                         </div>
                         <div class="slider__item__text">

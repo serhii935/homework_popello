@@ -1,10 +1,8 @@
 .menu {
     &__list {
-        display: none;
+        display: block;
         position: absolute;
-        right: -15px;
-        top: 88px;
-        left: -15px;
+        right: 110%;
         background-color: #ffffff;
         list-style: none;
         padding: 12px;
@@ -55,6 +53,13 @@
             background-image: url(../img/hamburger_light.svg);
         }
 
+        &_dark.active {
+            background-image: url(../img/close_dark.svg);
+        }
+
+        &_light.active {
+            background-image: url(../img/close_light.svg);
+        }
     }
 
     &__btn:hover {
