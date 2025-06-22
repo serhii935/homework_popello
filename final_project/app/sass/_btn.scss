@@ -20,10 +20,6 @@
         color: #f0145a;
         background-image: url(../img/arrow_red.svg);
     }
-
-    &.active{
-        background-image: url(../img/close.svg);
-    }
 }
 
 @media (min-width: 768px) {
